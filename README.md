@@ -8,4 +8,4 @@ Focus areas:
 - Data engineering fundamentals
 - System design & scalability
 
-Timeline: Jan–June 2026
+Timeline: Jan - June 2026
