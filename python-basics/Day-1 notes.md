@@ -22,4 +22,4 @@ I found the concept of variables and data types in Python to be quite straightfo
 Understanding more complex data structures like dictionaries and sets took some time. Additionally, grasping the nuances of Python's memory management and variable scope was a bit challenging initially.
 
 ## One thing that surprised me ...
-how powerful Python's standard library is. I was amazed at the variety of built-in modules available for tasks ranging from file handling to data manipulation, which significantly speeds up development time.
+How powerful Python's standard library is. I was amazed at the variety of built-in modules available for tasks ranging from file handling to data manipulation, which significantly speeds up development time.
