@@ -1,0 +1,35 @@
+DAY 1 NOTES - PYTHON FOR DATA ENGINEERING
+==========================================
+
+WHAT DAY 1 COVERED
+------------------
+* Variables and data types (strings, integers, floats, booleans)
+* Data structures: Lists, Tuples, Sets, and Dictionaries
+* String manipulation and formatting (f-strings, .format(), concatenation)
+* Conditional statements (if, elif, else)
+* Loops and iterations (for, while, break, continue)
+* Functions (defining, calling, *args, **kwargs, return statements)
+* Importing modules and exploring the standard library (random, math, datetime, os)
+* Mini data pipeline implementation: cleaning, filtering, and summarizing data
+
+WHAT PYTHON IS USED FOR IN DATA ENGINEERING
+-------------------------------------------
+* Data cleaning and validation (removing nulls, invalid types, out-of-range values)
+* Data transformation and filtering (applying business logic to datasets)
+* Building ETL pipelines (Extract, Transform, Load)
+* Automating data processing workflows
+* Working with APIs, CSVs, and databases
+* Data summarization and generating actionable metrics for reporting
+
+ONE THING I FOUND TRICKY
+------------------------
+Understanding the nuances of Python's memory management and variable scope was initially challenging. Additionally, working with complex data structures like dictionaries and sets required practice to grasp the different methods (intersection, difference, union) and when to use each data structure effectively.
+
+REFLECTION
+----------
+* What I learned today: I learned how to build a mini data pipeline using Python, including cleaning, filtering, and summarizing data with built-in functions and list comprehensions.
+* What I want to improve tomorrow: I want to get more comfortable with dictionary methods and practice writing cleaner, more efficient functions using *args and **kwargs.
+* One question I have about Python: How does Python's garbage collection work under the hood, and when should I explicitly manage memory in data engineering workflows?
+
+============================================================================
+INTERVIEW TIP: Be ready to explain the difference between lists, tuples, and sets, and demonstrate how you would clean messy data using Python's built-in functions like isinstance(), type checking, and list comprehensions.

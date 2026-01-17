@@ -1,0 +1,4 @@
+No of data: 6 
+Maximum value:100 
+Minimum value:30  
+Average value:62.500

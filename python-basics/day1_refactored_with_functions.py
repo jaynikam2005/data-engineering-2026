@@ -1,3 +1,4 @@
+'''Refactored code using functions'''
 
 def clean_data(raw_data):
     cleaned_data=[]
@@ -44,11 +45,11 @@ print(summary)
 '''Most efficient way to do the same using List Comprehension'''
 
 def clean_data(raw_data):
-    cleaned_data=[i for i in raw_data if isinstance(i,(int,float)) and i is not None]
+    cleaned_data=[i for i in raw_data if isinstance(i,(int,float)) and i is not None]  #This will check for both int and float types
     return cleaned_data
 
 def filter_data(cleaned_data):
-    filtered_data=[i for i in cleaned_data if i>20]
+    filtered_data=[i for i in cleaned_data if i>20]     #This will filter values greater than 20
     return filtered_data
 
 def summary_data(filtered_data):
@@ -57,7 +58,7 @@ def summary_data(filtered_data):
     return "Done"
 
 rd=[1,2,None,30,'invalid',40,-3,100,None,70,'N/A',70,0,65]
-summary=clean_data(rd)
+summary=clean_data(rd)  
 summary=filter_data(summary)
 summary=summary_data(summary)
 
