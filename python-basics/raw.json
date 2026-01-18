@@ -1,0 +1,50 @@
+{
+  "inventory_id": "A48291",
+  "warehouse_location": {
+    "latitude": 34.0522,
+    "longitude": -118.2437,
+    "city": "Los Angeles",
+    "state": "CA"
+  },
+  "items": [
+    {
+      "item_id": "P1001",
+      "name": "Laptop",
+      "category": "Electronics",
+      "attributes": {
+        "brand": "TechCorp",
+        "weight_kg": 1.5,
+        "dimensions_cm": {
+          "length": 35,
+          "width": 24,
+          "height": 1.8
+        }
+      },
+      "stock_levels": [
+        {"location": "Shelf A", "count": 50},
+        {"location": "Shelf B", "count": 20}
+      ]
+    },
+    {
+      "item_id": "P1002",
+      "name": "Chair",
+      "category": "Furniture",
+      "attributes": {
+        "brand": "ComfortZone",
+        "weight_kg": 5.2,
+        "dimensions_cm": {
+          "length": 60,
+          "width": 60,
+          "height": 90
+        }
+      },
+      "stock_levels": [
+        {"location": "Aisle 3", "count": 15},
+        {"location": "Aisle 4", "count": 10}
+      ]
+    }
+  ],
+  "last_updated": "2026-01-19T11:19:00Z",
+  "is_active": true,
+  "notes": null
+}

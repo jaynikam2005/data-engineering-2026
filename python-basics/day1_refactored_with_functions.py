@@ -1,6 +1,19 @@
-'''Refactored code using functions'''
+'''Refactored code using functions
+
+This file demonstrates how to encapsulate pipeline stages into functions with
+clear responsibilities. Each function receives data in a known form and returns
+transformed data, which makes the pipeline easier to test and reuse.
+'''
 
 def clean_data(raw_data):
+    """Remove non-numeric and None values from a list.
+
+    Args:
+        raw_data (list): input list potentially containing ints, floats, strings, None.
+
+    Returns:
+        list: only numeric (int/float) values from the input, preserving order.
+    """
     cleaned_data=[]
     for i in raw_data:
         if isinstance(i,(int,float)) and i is not None:
@@ -8,6 +21,11 @@ def clean_data(raw_data):
     return cleaned_data
 
 def filter_data(cleaned_data):
+    """Keep only values greater than 20.
+
+    This represents a simple business rule; in real pipelines this function
+    would be replaced by domain-specific filtering logic.
+    """
     filtered_data=[]
     for i in cleaned_data:
         if i>20:
@@ -15,6 +33,10 @@ def filter_data(cleaned_data):
     return filtered_data
         
 def summarize_data(filtered_data):
+    """Print summary statistics for the filtered numeric list.
+
+    Prints count, sum, min, max and average. Returns None (side-effect function).
+    """
     print('Summarizing the final data\n')
     if filtered_data:
         count=len(filtered_data)

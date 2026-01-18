@@ -1,6 +1,14 @@
 """
 Day 1: Python fundamentals applied to simple data processing.
 Focus: cleaning, filtering, summarizing data.
+
+This script contains two example pipelines that illustrate typical data-engineering steps:
+- ingest raw or semi-structured data
+- clean invalid values
+- apply business filters
+- compute summary statistics
+
+Each section is annotated so you can follow the transformation from raw input to final summary.
 """
 
 

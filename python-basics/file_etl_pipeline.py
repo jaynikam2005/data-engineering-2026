@@ -23,9 +23,14 @@ import ast   #This imports Python’s ast module, which provides the literal_eva
 
 with open("C:\\Coding\\DE\\data-engineering-2026\\python-basics\\raw_data.txt",'r') as reading_file :   #This opens the file raw_data.txt in read mode and assigns the file object to rf. The with statement ensures the file is properly closed after use.
    
+    # Read the file and attempt to parse the data after the first '=' as a Python literal.
+    # Example file content expected: "rd=[1,2,3]" so splitting on '=' and literal_eval produces a list.
+    # This is fragile if the file is missing '=' or contains invalid Python; the try/except
+    # prevents the script from crashing by falling back to an empty list.
     try:
         cleaning_data = ut.clean_data(ast.literal_eval(reading_file.read().split('=')[1]))
     except Exception:
+        # On any error (IndexError, ValueError, SyntaxError, etc.) use an empty input.
         cleaning_data = []
     '''
     Tries to read the file, split at =, and convert the part after = to a Python list using ast.literal_eval, then passes it to ut.clean_data.

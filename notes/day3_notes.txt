@@ -1,0 +1,25 @@
+# What CSV handling is used for in data engineering
+-   CSV handling is used in data engineering for importing, exporting, and processing tabular data. 
+    It allows for easy data exchange between different systems and applications, as CSV is a widely supported format. 
+    Data engineers often use CSV files to store raw data, intermediate results, or final outputs in ETL pipelines.
+
+
+# One thing you found tricky
+-   One tricky aspect of CSV handling is dealing with inconsistent data formats, such as varying delimiters, missing values, or special characters within fields. 
+    Ensuring proper parsing and cleaning of the data before processing can be challenging, especially when working with large datasets or files from different sources.
+
+
+# Notes on try, except and CSVs
+- The `try` and `except` blocks in Python are used for error handling. This helps prevent the program from crashing when an error occurs.
+- When working with CSV files, common errors include FileNotFoundError, ValueError, and issues with data formatting.
+- Example usage:
+    try:
+        with open('data.csv', 'r') as file:
+            # process CSV file
+    except FileNotFoundError:
+        print('CSV file not found.')
+    except Exception as e:
+        print('An error occurred:', e)
+- Using `try` and `except` ensures that data pipelines are robust and can handle unexpected issues gracefully.
+- We practiced reading CSV files using Python's `csv` module and handled errors using `try` and `except` blocks.
+- It's important to log errors and handle exceptions to maintain data quality and pipeline reliability.
